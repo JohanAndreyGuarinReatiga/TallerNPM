@@ -1,0 +1,15 @@
+{
+  "name": "tallernpm",
+  "version": "1.0.0",
+  "description": "this is an activity to learn node",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Johan",
+  "license": "ISC",
+  "dependencies": {
+    "bmi-imc-calculator": "^1.1.1"
+  }
+}
