@@ -1,41 +1,53 @@
-# Taller NPM
+# Calculadora de Índice de Masa Corporal (IMC)
 
-Desarrollar una **aplicación de consola sencilla con Node.js** que resuelva un problema puntual mediante el uso de una **librería de NPM de libre elección**, demostrando así la capacidad de investigar, aplicar herramientas externas y construir soluciones funcionales.
+## Descripción del Problema
+El Índice de Masa Corporal (IMC) es una medida utilizada para evaluar si una persona tiene un peso saludable en relación con su estatura. Esta herramienta es útil para identificar posibles problemas de salud relacionados con el peso, como el sobrepeso o la obesidad.
 
-### **Instrucciones:**
+Este programa de consola permite calcular el IMC de una persona utilizando unidades métricas o imperiales, proporcionando además una categoría descriptiva del resultado.
 
-1. **Identifica un problema o necesidad específica** que pueda ser resuelta mediante una aplicación de consola (por ejemplo: formateo de texto, generación de contraseñas, manejo de fechas, cifrado de datos, visualización de gráficos por consola, etc.).
-    
-    ⚠️ Los ejemplos mencionados son ejemplos para hacer parte del aplicativo, más no deben ser todo el aplicativo por su complejidad simple.
-    
-2. **Busca e investiga una librería de NPM** que ayude a resolver ese problema de manera eficiente. La elección de la librería debe ser justificada.
-3. **Desarrolla una aplicación de consola con Node.js** que tenga un **menú interactivo con al menos tres opciones**, donde se muestre claramente:
-    - El contexto o descripción del problema.
-    - El uso y funcionamiento de la librería elegida como parte de la solución.
-4. La aplicación debe estar publicada en un **repositorio en GitHub** con:
-    - Código ordenado y funcional.
-    - Un archivo **README.md bien documentado** que incluya:
-        - Descripción del problema.
-        - Librería utilizada (nombre y link oficial).
-        - Explicación de cómo se implementó.
-        - Instrucciones claras de instalación y uso del programa.
-        - Link al video de presentación.
-5. Graba un **video explicativo de máximo 10 minutos** donde muestres:
-    - Qué problema resuelve tu aplicación.
-    - Por qué elegiste esa librería y cómo se usa.
-    - Cómo funciona el aplicativo completo.
-    - Demostración del uso del programa por consola.
-    
-    📌 El enlace al video debe estar incluido en el README del repositorio.
-    
+## Librería Utilizada
+- **Nombre:** `bmi-calc`
+- **Descripción:** Una librería de Node.js para calcular el Índice de Masa Corporal (IMC) en unidades métricas o imperiales.
+- **Link oficial:** [bmi-calc en npm](https://www.npmjs.com/package/bmi-calc)
 
----
+## Implementación
+El programa utiliza la librería `bmi-calc` para realizar los cálculos del IMC. Se implementó un menú interactivo con la librería `inquirer` que permite al usuario:
+1. Calcular el IMC en unidades métricas.
+2. Calcular el IMC en unidades imperiales.
+3. Ver información sobre las categorías del IMC.
+4. Consultar ejemplos de uso de la calculadora.
+5. Salir del programa.
 
-### **Entrega:**
+El cálculo del IMC se realiza utilizando la fórmula:
+- **Métrico:** `IMC = peso (kg) / estatura² (m²)`
+- **Imperial:** `IMC = (peso (lbs) / estatura² (in²)) * 703`
 
-- Link del repositorio de GitHub con README completo.
-- Video publicado en YouTube (oculto o público) con link en el README.
+## Instrucciones de Instalación y Uso
+1. **Clonar el repositorio**
 
----
+2. **Instalar dependencias:**
+   ```bash
+   npm install
+   ```
 
-🚨 Entrega: Miércoles 16 de Julio de 2025 11:59 p.m.
+3. **Ejecutar el programa:**
+   ```bash
+   node main.js
+   ```
+
+4. **Navegar por el menú interactivo:**
+   - Seleccione una opción del menú utilizando las flechas del teclado y presione `Enter`.
+
+## Ejemplo de Uso
+### Calcular IMC (Métrico)
+- **Peso:** 70 kg
+- **Estatura:** 1.75 m
+- **Resultado:** IMC = 22.86 → Normal
+
+### Calcular IMC (Imperial)
+- **Peso:** 154 lbs
+- **Estatura:** 68 in
+- **Resultado:** IMC = 23.40 → Normal
+
+## Video 
+[Presentación](#)
